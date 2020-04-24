@@ -1,0 +1,229 @@
+body{
+    background-image: url(img/alejandro-escamilla-y83Je1OC6Wc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Questrial;
+    font-size: 5vh;
+    height: 100vh;
+    margin:0;
+    padding: 0;  
+}
+
+.NavBar{
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    border-bottom: crimson solid 0.2vh;
+    display: flex;
+}
+
+#SocialMedias{
+    display: flex;
+    flex-flow: wrap row;
+    margin-left:3vh;
+}
+
+#SocialMedias>p{
+    font-size: 0.4em;
+    color: white;
+    margin:auto;
+}
+
+.fab{
+    color: white;
+    font-size: 0.6em;
+    margin:0 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#Home{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+a{
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 0.4em;
+    height:5vh;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    width: 15vh;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+a:hover{
+    background-color:crimson;
+    border-left:solid 1px black;
+    border-right:solid 1px black;
+    padding: 0 15px 0 15px;
+}
+
+.active{
+    background-color: rgb(255, 153, 0);
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+.fa-buffer{
+    color: white;
+    font-size: 1em;
+    margin: 0 10px 0 0;
+}
+
+.NavBarTop{
+    background-color: rgb(19, 19, 19);
+    border-bottom: crimson solid 0.2vh;
+    display: none;
+    justify-content: center;
+}
+
+.left:hover, .bottom:hover{
+    color:crimson;
+}
+
+.Skills{
+    align-items: center;
+    display: flex;
+    flex-flow: wrap row;
+    height: 94.8vh;
+    justify-content: center;
+}
+
+.Skillbox{
+    align-items: center;
+    background-color:rgb(51, 51, 51);
+    border: rgb(0, 0, 0) solid 5px;
+    display: grid;   
+    grid-template-rows: repeat(autofit,minmax(100px,25%));
+    height: 83vh;
+    width: 80vh;
+}
+
+.Language{
+    display: grid;
+    grid-template-rows: 95% 5%;
+    background-color:rgb(19, 19, 19);
+    height: 100%;
+}
+
+.LanguageName{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+.Name{
+    color:white;
+    font-size: 1em;
+    margin-left:10px;
+}
+
+.skillitem0, .skillitem1, .skillitem2, .skillitem3{
+    font-size: 2em;
+}
+
+.skillitem0{ 
+    color:#e34c26;   
+}
+
+.skillitem1{
+    color:#2965f1;
+}
+
+.skillitem2{
+    color:#f0db4f;
+}
+
+
+.skillitem3{
+    color:#00d8ff;
+}
+
+.Skill{
+    background-color:white;
+    border-top: black solid 2px;
+    display: flex;
+    flex-flow: wrap row; 
+}
+
+#Bar0, #Bar1, #Bar2, #Bar3{
+    background-color: dodgerblue;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#Bar0{
+    width:95%;
+}
+
+#Bar1{
+    width:70%;
+}
+#Bar2{
+    width:10%;
+}
+
+#Bar3{
+    width:0%;
+}
+
+#Bar0:hover, #Bar1:hover, #Bar2:hover, #Bar3:hover{
+    background-color: rgb(255, 75, 75);
+    
+}
+
+.NavBarBottom{
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    border-top: crimson solid 0.2vh;
+    color:white;
+    display: none;
+    justify-content: center;
+    flex-flow: wrap row;
+    height: 5vh;  
+    padding:0;  
+}
+
+@media only screen and (max-width: 1050px) {
+    body {
+      font-size: 4vh;
+    }
+
+    a{
+        font-size: 0.43em;
+        height: 4.8vh;
+    }
+
+    .NavBar{
+        display: none;
+    }
+
+    .NavBarTop{
+        display: flex;
+    }
+
+    .Skills{
+        height: 90vh;
+    }
+
+    .NavBarBottom{
+        display: flex;
+        height: 4.8vh;
+    }
+}

@@ -1,0 +1,162 @@
+body{
+    background-image: url(img/alejandro-escamilla-y83Je1OC6Wc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Questrial;
+    font-size: 5vh;
+    height: 100vh;
+    margin:0;
+    padding: 0;  
+}
+
+.NavBar{
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    border-bottom: crimson solid 0.2vh;
+    display: flex;
+}
+
+#SocialMedias{
+    display: flex;
+    flex-flow: wrap row;
+    margin-left:3vh;
+}
+
+#SocialMedias>p{
+    font-size: 0.4em;
+    color: white;
+    margin:auto;
+}
+
+.fab{
+    color: white;
+    font-size: 0.6em;
+    margin:0 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#Home{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+a{
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 0.4em;
+    height:5vh;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    width: 15vh;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+a:hover{
+    background-color:crimson;
+    border-left:solid 1px white;
+    border-right:solid 1px white;
+    color: white;
+    padding: 0 15px 0 15px;
+}
+
+.active{
+    background-color: rgb(255, 153, 0);
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+.fa-buffer{
+    color: white;
+    font-size: 1em;
+    margin: 0 10px 0 0;
+}
+
+.NavBarTop{
+    background-color: rgb(19, 19, 19);
+    border-bottom: crimson solid 0.2vh;
+    display: none;
+    justify-content: center;
+}
+
+.left:hover, .bottom:hover{
+    color:crimson;
+}
+
+.Title{
+    align-items: center;
+    display: flex;
+    flex-flow: wrap column;
+    height: 94.8vh;
+    font-size: 1em;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, #Title{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, #Title{
+    background-color: black;
+    color:white;
+}
+
+h2{
+    font-size: 0.6em;
+}
+
+.NavBarBottom{
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    border-top: crimson solid 0.2vh;
+    color:white;
+    display: none;
+    justify-content: center;
+    flex-flow: wrap row;
+    height: 5vh;  
+    padding:0;  
+}
+
+@media only screen and (max-width: 1050px) {
+    body {
+      font-size: 4vh;
+    }
+
+    .NavBar{
+        display: none;
+    }
+
+    .NavBarTop{
+        display: flex;
+    }
+
+    a{
+        font-size: 0.43em;
+        height: 4.8vh;
+    }
+
+    .Title{
+        height: 90vh;
+    }
+
+    .NavBarBottom{
+        display: flex;
+        height: 4.8vh;
+    }
+}
